@@ -1,0 +1,6 @@
+name = "prisma-cloudflare-workers-reproduction"
+main = "src/index.ts"
+compatibility_date = "2022-09-20"
+
+[vars]
+DATABASE_URL="postgresql://test:test@localhost:5432/test?schema=public"
