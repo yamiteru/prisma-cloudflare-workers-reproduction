@@ -13,8 +13,10 @@
     "prisma": "4.3.1"
   },
   "scripts": {
-    "generate": "prisma generate",
-    "dev": "wrangler dev"
+    "generate:edge": "prisma generate --data-proxy",
+    "generate:normal": "prisma generate",
+    "dev:edge": "wrangler dev src/edge.ts --local",
+    "dev:normal": "wrangler dev src/normal.ts --local"
   },
   "dependencies": {
     "@prisma/client": "4.3.1"
